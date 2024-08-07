@@ -23,7 +23,7 @@ export default {
     postData() {
 
       let json = [{
-        props: { "G1": "", "G2": "", "G3": "", "G4": "17225588611566642356", "G5": "iPhone 15 Pro", "G6": "6.6.3", "G7": "ios", "G8": "15", "G15": "douyinMiniTest", "G16": "", "G18": "SAMA_B243M610", "G19": "91.103.121.72", "G20": "dyMini", "G21": "1.11.0", "G22": "393x852", "G23": "wifi", "G9": "carselection_360_bannervehicleseries", "G10": "act", "G11": "@/pages/car/car", "G17": "2027", "G24": "" }
+        props: { "G1": "", "G2": "", "G3": "", "G4": "17225588611566642356", "G5": "iPhone 15 Pro", "G6": "6.6.3", "G7": "ios", "G8": "15", "G15": "doust", "G16": "", "G18": "S43M610", "G19": "91.103.121.72", "G20": "dyMini", "G21": "1.11.0", "G22": "393x852", "G23": "wifi", "G9": "carsel", "G10": "act", "G11": "@/r", "G17": "2027", "G24": "" }
       }]
 
       let tmpServerFormat = JSON.stringify({
