@@ -35,7 +35,7 @@ export default {
       console.log(Object.prototype.toString.call(gzData.buffer))
 
       uni.request({
-        url: "https://ibuick.collector.sgmlink.com:8443/dcp/v1/message",
+        url: "https://xxxx",
         method: "POST",
         header: {
           "Content-Encoding": "gzip",
