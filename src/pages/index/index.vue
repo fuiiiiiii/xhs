@@ -16,14 +16,19 @@ export default {
     }
   },
   onLoad() {
-    console.log(1111)
+    // console.log(1111)
+    // this.postData()
+  },
+  onShow() {
+
+    console.log(2222)
     this.postData()
-   },
+  },
   methods: {
     postData() {
 
       let json = [{
-        props: { "G1": "", "G2": "", "G3": "", "G4": "17225588611566642356", "G5": "iPhone 15 Pro", "G6": "6.6.3", "G7": "ios", "G8": "15", "G15": "doust", "G16": "", "G18": "S43M610", "G19": "91.103.121.72", "G20": "dyMini", "G21": "1.11.0", "G22": "393x852", "G23": "wifi", "G9": "carsel", "G10": "act", "G11": "@/r", "G17": "2027", "G24": "" }
+        props: { "11": "", "22": "", "33": "", "44": "17225588611566642356", "555": "iPhone 15 Pro", "66": "6.6.3", "777": "ios", "888": "15", "2ss": "doust", "16": "", "18": "sss", "19": "2223", "20": "sss", "21": "1.11.0", "22": "393x852", "23": "wifi", "fff9": "carsel", "dss10": "act", "12sss": "@/r", "lll333": "2027", "nnx34": "" }
       }]
 
       let tmpServerFormat = JSON.stringify({
@@ -35,13 +40,19 @@ export default {
       console.log(Object.prototype.toString.call(gzData.buffer))
 
       uni.request({
-        url: "https://xxxx",
+        url: "https://baidu.com",
         method: "POST",
         header: {
           "Content-Encoding": "gzip",
           "Content-Type": "application/json; charset=utf-8",
         },
-        data: gzData.buffer
+        data: gzData.buffer,
+        success: res => {
+          console.log('成功', res)
+        },
+        fail: err  => {
+          console.log('失败', err)
+        }
       })
     }
   },
